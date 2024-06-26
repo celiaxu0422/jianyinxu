@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .about-section,
+      .projects-section,
+      .skills-section,
+      .contact-section {
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .about-section h2,
+      .projects-section h2,
+      .skills-section h2,
+      .contact-section h2 {
+        margin-bottom: 30px;
+      }
+      .about-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #007bff;
+        background: url("images/about.jpg") center/cover no-repeat;
+        margin-bottom: 30px;
+      }
+      .about-text {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .projects-section .card,
+      .skills-section .card {
+        margin: 15px;
+      }
+      .skills-section .card img {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+      }
+      .contact-section {
+        background-color: #333;
+        color: #fff;
+      }
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      .contact-info div {
+        margin: 0 20px;
+      }
+      .contact-info i {
+        font-size: 1.5em;
+        margin-right: 10px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #ff69b4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+      }
+      .social-icons a:hover {
+        background-color: #ff85c1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Home Section (For scrolling back to the top) -->
+      <section id="home"></section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <h2>About</h2>
+        <div class="about-img"></div>
+        <div class="about-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec
+            vestibulum magna, et dapibus lacus. Nullam ut purus eu augue dictum
+            pretium nec a justo. Aenean nec suscipit elit. Fusce facilisis purus
+            id tortor pulvinar, at sollicitudin velit fermentum.
+          </p>
+          <p>
+            Sed non lacus nec velit vestibulum gravida. Quisque scelerisque,
+            sapien nec ornare consectetur, sem elit sollicitudin lacus, in
+            tempor sem libero et lacus. Integer sed tincidunt metus. Suspendisse
+            potenti. Donec ut tincidunt metus.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/projects/1.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna, et dapibus lacus.
+                </p>
+                <a href="#" class="btn btn-primary">Blog Post</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/projects/2.jpg"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna, et dapibus lacus.
+                </p>
+                <a href="#" class="btn btn-primary">Blog Post</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/projects/3.jpg"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna, et dapibus lacus.
+                </p>
+                <a href="#" class="btn btn-primary">Blog Post</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="images/skills/1.png"
+                class="card-img-top"
+                alt="Python"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  >Link to course or bootcamp</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="images/skills/2.png"
+                class="card-img-top"
+                alt="Data Visualization"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Data Visualization</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  >Link to course or bootcamp</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="images/skills/3.png" class="card-img-top" alt="SQL" />
+              <div class="card-body">
+                <h5 class="card-title">SQL</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  >Link to course or bootcamp</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="images/skills/4.png"
+                class="card-img-top"
+                alt="Data Storytelling"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Data Storytelling</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  nec vestibulum magna.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  >Link to course or bootcamp</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span>email@example.com</span>
+          </div>
+          <div>
+            <i class="fas fa-phone"></i>
+            <span>(123) 456-7890</span>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#" data-toggle="tooltip" title="LinkedIn">
+            <img src="icons/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="#" data-toggle="tooltip" title="Twitter">
+            <img src="icons/twitter.png" alt="Twitter" />
+          </a>
+          <a href="#" data-toggle="tooltip" title="GitHub">
+            <img src="icons/github.png" alt="GitHub" />
+          </a>
+          <a href="#" data-toggle="tooltip" title="Medium">
+            <img src="icons/medium.png" alt="Medium" />
+          </a>
+          <a href="#" data-toggle="tooltip" title="YouTube">
+            <img src="icons/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
